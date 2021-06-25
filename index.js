@@ -3,7 +3,7 @@
  * @Author: qxp
  * @Date: 2021-06-23 16:03:51
  * @LastEditors: qxp
- * @LastEditTime: 2021-06-25 11:25:16
+ * @LastEditTime: 2021-06-25 17:19:13
  */
 
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -81,9 +81,8 @@ export default function useModel(context, deps = []) {
 }
 
 class Listenable {
-    _listeners = [];
-
     constructor(state) {
+        this._listeners = [];
         this.value = state;
     }
 

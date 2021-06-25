@@ -1,9 +1,11 @@
 {
   "name": "use-selected-context",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "避免使用context导致所有子组件在context更新时都强制re-render的性能问题",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "babel index.js  -o  dist/index.js",
+    "release": "npm version patch && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,8 +15,16 @@
   "repository": "https://github.com/Saitmob/use-selected-context.git",
   "author": "qxp",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
     "lodash.isequal": "^4.5.0",
-    "react": "^17.0.2"
+    "react": "^16.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "parcel-bundler": "^1.12.5"
   }
 }
