@@ -1,0 +1,20 @@
+{
+  "name": "use-selected-context",
+  "version": "1.0.0",
+  "description": "避免使用context导致所有子组件在context更新时都强制re-render的性能问题",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "context",
+    "react"
+  ],
+  "repository": "https://github.com/Saitmob/use-selected-context.git",
+  "author": "qxp",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.isequal": "^4.5.0",
+    "react": "^17.0.2"
+  }
+}
